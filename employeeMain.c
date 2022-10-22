@@ -32,6 +32,7 @@ int main(void)
     printf("Employee ID is NOT found in the record\n");
 
   // Example found
+  matchPtr = searchEmployeeByName(EmployeeTable, EmployeeTableEntries, "Tony Bobcat");
   if (matchPtr != NULL)
     printf("Employee Tony Bobcat is in record %d\n", matchPtr - EmployeeTable);
   else
